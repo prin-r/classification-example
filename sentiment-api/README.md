@@ -28,11 +28,19 @@ python main.py
 **Docker**
 
 ```bash
-# build docker image
+# build your own docker image
 docker build -t sentiment .
 
 # run docker container
 docker run -it --rm -p 0.0.0.0:8000:8000 sentiment
+```
+
+```bash
+# Use docker image from Dockerhub
+docker pull imprefvicticiousmumu/sentiment:1.0
+
+# run docker container
+docker pull imprefvicticiousmumu/sentiment:1.0
 ```
 
 Test
